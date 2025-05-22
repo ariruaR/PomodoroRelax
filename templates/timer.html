@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="/static/scripts.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="timer_block">
+        <h1 id="timer">25:00</h1>
+    <button onclick=startTimer()>Start Work!</button>
+</div>
+    
+</body>
+
+
+<script src="static/scripts.js"></script>
+<style>
+    body{
+    background-color: #330066;
+    }
+    .timer_block{
+        text-align: center;
+        justify-content: center;
+    }
+    h1{
+        font-family: "Playpen Sans Hebrew", cursive;
+        font-size: 200px;
+        color: lightblue;
+    }
+    button{
+        font-family: "Playpen Sans Hebrew", cursive;
+        font-size: 35px;
+        color: #6633FF;
+        border-radius: 10px;
+        background-color: #420183;
+    }
+    button:hover{
+        color: white;
+        background-color: #6633FF;
+    }
+</style>
+{% endblock %}
